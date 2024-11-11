@@ -1,35 +1,110 @@
-# Boilerplate: Fullstack
+<!-- ![boardgame!](server/public/pics/banner1.jpg) -->
+<img src="server/public/pics/banner1.jpg" alt="boardgame" width="800" height="200">
 
-## Setup
+# Gamestagram
 
-### What's included
+Gamestagram is an web application designed to provide a platform for board game enthusiasts who struggle to find people to play with. By signing up to the platform, users can browse and join board game events hosted by other users, create their own events, and efficiently manage their events.
 
-This repo includes:
+With Gamestagram, users will never have to worry about finding a group to play with, as they can easily connect with other like-minded individuals and enjoy their favorite games together.
 
-* a single, simple API endpoint (`/api/v1/fruits`)
-* a single React component (`<App />`)
-* an example database module (`server/db/fruits.js`)
-* an API client module (`client/apis/fruits.js`)
-* configuration for Jest and testing library
-* configuration for server-side debugging in VS Code
-* a single client-side test (`client/components/App.test.js`)
+## Key features
 
-### Installation
+#### • Sign up and sign in with Google account or your prefered email
 
-#### **From the Github UI**
+#### • Personal profile management, where users can update their details and preferences
 
-See the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to use Github's feature to create a new repo from a template.
+#### • Join board game events hosted by other users
 
-#### **From the command line**
+#### • Host their own board game events and manage them
+
+#### • Receive email notifications if the event is cancelled
+
+#### • Integration of external board game APIs to display game information
+
+#### • Google Maps integration to display event location
+
+## Tech stack
+
+#### • TypeScript
+
+#### • React
+
+#### • Tailwindcss
+
+#### • Auth0
+
+#### • sendGrid
+
+#### • REST API
+
+#### • Google Map API
+
+#### • SQLite (with knex)
+
+#### • Express.js
+
+#### • Zustand
+
+#### • Jest
+
+## Installation
+
+#### 1. Clone this repository
+
+#### 2. Install the packages
 
 ```
-git clone https://github.com/dev-academy-challenges/boilerplate-fullstack [your-project-name]
-cd [your-project-name]
-npm install # to install dependencies
-npm run dev # to start the dev server
+npm install
+
 ```
 
-You can find the server running on [http://localhost:3000](http://localhost:3000).
+#### 3. Initialise the databse
 
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack)
+```
+npm run knex migrate:latest
+npm run knex seed:run
+
+```
+
+#### 4. Run the application
+
+```
+npm run dev
+
+```
+
+#### 5. Browse the website
+
+```
+http://localhost:3000
+
+```
+<img src="server/public/pics/Gamestagram-home.png" alt="boardgame">
+
+## Stretch
+
+#### 1.Instant messaging:
+
+Allow users to send instant messages to other users to facilitate communication before or during events.
+
+#### 2.Rating and reviews:
+
+Enable users to rate and review other users after participating in an event to help build trust and accountability within the community.
+
+#### 3.Event creation based on boardgames:
+
+Allow users to create an event based on a specific board game they are browsing, making it easier for users to find and join events that interest them.
+
+## Code Contributors
+<a href="https://github.com/Dethorasis">
+  <img src="https://contrib.rocks/image?repo=Dethorasis/Dethorasis" />
+</a>
+<a href="https://github.com/kason-cheong">
+  <img src="https://contrib.rocks/image?repo=kason-cheong/sprint-1-workshop" />
+</a>
+<a href="https://github.com/KemaxLong">
+  <img src="https://contrib.rocks/image?repo=KemaxLong/dev-academy" />
+</a>
+<a href="https://github.com/Kurt-Leong">
+  <img src="https://contrib.rocks/image?repo=Kurt-Leong/Kurtleong.git.io" />
+</a>
